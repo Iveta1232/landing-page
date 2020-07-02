@@ -32,7 +32,8 @@ nav a {
   line-height: 21px; }
 
 #header-nav-right {
-  float: right;
+  /*float: right; */
+  text-align: right;
   display: inline-block; }
 
 .download-icon {
@@ -55,12 +56,64 @@ nav a {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
+  vertical-align: middle;
   font-size: 20px;
   line-height: 23px;
-  margin-right: 24px;
-  vertical-align: middle; }
+  margin-right: 24px; }
 
 .header-icons:last-child {
   margin-right: 0; }
+
+.header-box {
+  width: 549px;
+  height: 304px;
+  margin-left: 149px; }
+
+.header-box-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 53.2px;
+  line-height: 62px;
+  color: #FFFFFF;
+  margin-bottom: 11px; }
+
+.header-box-body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18.2px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 42px; }
+
+.video-button {
+  width: 179px;
+  height: 35px;
+  background: #F44336;
+  box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 19px; }
+
+.video-button-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF; }
+
+.play-icon {
+  width: 15px;
+  height: 18px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: bottom;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 3px; }
 
 /*# sourceMappingURL=style.css.map */

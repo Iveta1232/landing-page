@@ -9,6 +9,11 @@ $default_font_family:Roboto;
   font-style: normal;
   font-weight: 300;
 }
+@mixin default-icon-font {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
 body {
   max-width: 1440px;
   height: 2792px;
@@ -41,7 +46,8 @@ nav a {
   line-height: 21px;
 }
 #header-nav-right {
-  float: right;
+  /*float: right; */
+  text-align: right;
   display: inline-block;
 }
 .download-icon {
@@ -59,14 +65,58 @@ nav a {
 .header-icons {
   width: 18px;
   height: 20px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
+  @include default-icon-font;
+  vertical-align: middle;
   font-size: 20px;
   line-height: 23px;
   margin-right: 24px;
-  vertical-align: middle;
 }
 .header-icons:last-child {
   margin-right: 0;
+}
+.header-box {
+  width: 549px;
+  height: 304px;
+  margin-left: 149px;
+}
+.header-box-title {
+  font-family: $default_font_family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 53.2px;
+  line-height: 62px;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.header-box-body {
+  @include default-font;
+  font-size: 18.2px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 42px;
+}
+.video-button {
+  width: 179px;
+  height: 35px;
+  background: #F44336;
+  box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 19px;
+}
+.video-button-text {
+  @include default-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.play-icon {
+  width: 15px;
+  height: 18px;
+  @include default-icon-font;
+  vertical-align: bottom;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 3px;
 }
