@@ -37,6 +37,9 @@ header {
   padding-top: 37px;
   margin: 0 162px 146px 150px;
 }
+#header-nav-right .menu {
+  display: none;
+}
 nav a {
   color: #FFFFFF;
 }
@@ -119,4 +122,97 @@ nav a {
   line-height: 21px;
   color: #FFFFFF;
   margin-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+    height: 4135px;
+  }
+  header {
+    width: 768px;
+    height: 597px;
+    background-image: url('../images/bg-tablet.png');
+  }
+  #header-nav-bar {
+    width: 768px;
+    height: 67px;
+    padding-top: 0;
+    margin: 0;
+    margin-bottom: 107px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  #header-logo {
+    margin-left: 24px;
+  }
+  .header-icons:last-child {
+    margin-right: 26px;
+  }
+  .header-box {
+    width: 716px;
+    height: 302px;
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+    height: 4442px;
+  }
+  header {
+    width: 425px;
+    height: 664px;
+    background-image: url('../images/bg-mobile.png');
+  }
+  #header-nav-bar {
+    width: 425px;
+    height: 62px;
+    align-items: normal;
+  }
+  #header-logo {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .header-icons,
+  .header-nav-text {
+    display: none;
+  }
+  #header-nav-right {
+    width: 22px;
+    height: 14px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-right: 25px;
+  }
+  #header-nav-right .menu {
+    width: 22px;
+    height: 14px;
+    text-align: right;
+    display: inline-grid;
+    margin-right: 25px;
+  }
+  .menu img {
+    margin-bottom: 4px;
+  }
+  .menu img:last-child {
+    margin-bottom: 0;
+  }
+  .header-box {
+    width: 383px;
+    height: 416px;
+    margin-left: 15px;
+  }
 }
