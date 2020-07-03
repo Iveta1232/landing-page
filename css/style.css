@@ -121,7 +121,7 @@ nav a {
 
 main {
   width: 1380px;
-  height: 2045px;
+  height: 1950px;
   margin: -60px auto 32px;
   background-color: #FFFFFF;
   box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
@@ -291,6 +291,11 @@ main {
   width: 24px;
   height: 18px; }
 
+#form {
+  width: 753px;
+  height: 423px;
+  margin: 0 285px 72px 342px; }
+
 @media (max-width: 768px) {
   body {
     width: 768px;
@@ -322,7 +327,7 @@ main {
 
   main {
     width: 748px;
-    height: 3481px;
+    height: 3386px;
     margin: -60px auto 31px; }
 
   #features {
@@ -353,7 +358,12 @@ main {
     margin-bottom: 0; }
 
   .team-member-description {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  #form {
+    width: 716px;
+    height: 500px;
+    margin: 0 auto 82px; } }
 @media (max-width: 425px) {
   body {
     width: 425px;
@@ -405,7 +415,7 @@ main {
 
   main {
     width: 405px;
-    height: 3718px; }
+    height: 3623px; }
 
   .main-description {
     width: 368px;
@@ -424,6 +434,11 @@ main {
     height: 411px; }
 
   .team-member-description {
-    margin-bottom: 38px; } }
+    margin-bottom: 38px; }
+
+  #form {
+    width: 378px;
+    height: 548px;
+    margin: 0 auto 79px; } }
 
 /*# sourceMappingURL=style.css.map */
