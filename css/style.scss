@@ -224,6 +224,8 @@ main {
 .avatar {
   width: 170px;
   height: 170px;
+  box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 90px;
   margin-bottom: 32px;
 }
 .team-member-name {
@@ -263,11 +265,10 @@ main {
   vertical-align: middle;
   margin-top: 0;
 }
-.social-media img {
+.social-media a {
   margin-right: 29px;
-  cursor: pointer;
 }
-.last:last-child {
+.social-media a:last-child {
   margin-right: 0;
 }
 .social-media-one {
@@ -338,6 +339,26 @@ main {
   .feature:last-child {
     margin-bottom: 0;
   }
+  #team-box {
+    width: 713px;
+    height: 1279px;
+  }
+  #team-box-body {
+    width: 713px;
+    height: 1147px;
+  }
+  .team {
+    width: 713px;
+    height: 369px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .team:last-child {
+    margin-bottom: 0;
+  }
+  .team-member-description {
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -399,5 +420,20 @@ main {
   .main-description {
     width: 368px;
     height: 139px;
+  }
+  #team-box {
+    width: 373px;
+    height: 1402px;
+  }
+  #team-box-body {
+    width: 372px;
+    height: 1273px;
+  }
+  .team {
+    width: 372px;
+    height: 411px;
+  }
+  .team-member-description {
+    margin-bottom: 38px;
   }
 }
