@@ -1,5 +1,5 @@
 body {
-  max-width: 1440px;
+  width: 1440px;
   height: 2792px;
   background: #CCCCCC; }
 
@@ -119,9 +119,180 @@ nav a {
   color: #FFFFFF;
   margin-right: 3px; }
 
+main {
+  width: 1380px;
+  height: 2045px;
+  margin: -60px auto 32px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding-top: 95px; }
+
+.main-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36.4px;
+  line-height: 43px;
+  text-align: center;
+  color: #3C4858;
+  margin: 0 auto 38px; }
+
+.main-description {
+  width: 723px;
+  height: 70px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17.5px;
+  line-height: 21px;
+  text-align: center;
+  color: #999999;
+  margin: 0 auto 161px; }
+
+#features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1108px;
+  height: 201px;
+  margin: 0 auto 208px; }
+
+.feature {
+  width: 328px;
+  height: 201px;
+  text-align: center;
+  align-items: center;
+  /*
+    margin-right: 62px;
+  */ }
+
+/*
+.feature:last-child {
+  margin-right: 0;
+}
+*/
+.feature-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3C4858;
+  margin-top: 31px;
+  margin-bottom: 18px; }
+
+.feature-text {
+  height: 58px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  margin: 0; }
+
+#team-box {
+  width: 1133px;
+  height: 541px;
+  text-align: center;
+  margin: 0 auto 185px; }
+
+.team-box-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36.4px;
+  line-height: 43px;
+  color: #3C4858;
+  margin-top: 0;
+  margin-bottom: 86px; }
+
+#team-box-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1133px;
+  height: 412px; }
+
+.team {
+  width: 352px;
+  height: 412px;
+  text-align: center;
+  align-items: center;
+  margin-right: 38px; }
+
+.team:last-child {
+  margin-right: 0; }
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 32px; }
+
+.team-member-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.2px;
+  line-height: 21px;
+  color: #3C4858;
+  margin-top: 0;
+  margin-bottom: 7px; }
+
+.team-member-profession {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.65px;
+  line-height: 16px;
+  color: #777777;
+  margin-top: 0;
+  margin-bottom: 35px; }
+
+.team-member-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  margin: 0;
+  margin-bottom: 38px; }
+
+.soacial-media {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #999999;
+  vertical-align: middle;
+  margin-top: 0; }
+
+.social-media img {
+  margin-right: 29px;
+  cursor: pointer; }
+
+.last:last-child {
+  margin-right: 0; }
+
+.social-media-one {
+  width: 17px;
+  height: 18px; }
+
+.social-media-two {
+  width: 16px;
+  height: 21px; }
+
+.social-media-three {
+  width: 24px;
+  height: 18px; }
+
 @media (max-width: 768px) {
   body {
-    max-width: 768px;
+    width: 768px;
     height: 4135px; }
 
   header {
@@ -146,10 +317,25 @@ nav a {
   .header-box {
     width: 716px;
     height: 302px;
-    margin-left: 24px; } }
+    margin-left: 24px; }
+
+  main {
+    width: 748px;
+    height: 3481px;
+    margin: -60px auto 31px; }
+
+  #features {
+    width: 328px;
+    height: 820px; }
+
+  .feature {
+    margin-bottom: 108px; }
+
+  .feature:last-child {
+    margin-bottom: 0; } }
 @media (max-width: 425px) {
   body {
-    max-width: 425px;
+    width: 425px;
     height: 4442px; }
 
   header {
@@ -194,6 +380,14 @@ nav a {
   .header-box {
     width: 383px;
     height: 416px;
-    margin-left: 15px; } }
+    margin-left: 15px; }
+
+  main {
+    width: 405px;
+    height: 3718px; }
+
+  .main-description {
+    width: 368px;
+    height: 139px; } }
 
 /*# sourceMappingURL=style.css.map */
