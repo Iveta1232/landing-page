@@ -317,7 +317,7 @@ main {
   line-height: 21px;
   color: #999999;
   margin-top: 0;
-  margin-bottom: 48px; }
+  margin-bottom: 36px; }
 
 form {
   outline: none;
@@ -329,7 +329,7 @@ form {
   width: 361px;
   border: none;
   border-bottom: 1px solid #D2D2D2;
-  margin-bottom: 50px; }
+  margin-bottom: 38px; }
 
 .text {
   font-family: Roboto;
@@ -338,7 +338,7 @@ form {
   font-size: 14px;
   line-height: 16px;
   color: #999999;
-  padding: 0 0 7px 0; }
+  padding: 12px 0 7px 0; }
 
 .message {
   width: 751px;
@@ -355,10 +355,17 @@ form {
   color: #999999;
   padding: 0 0 62px 0; }
 
+.message:focus,
+.underline:focus {
+  border-bottom: 1px solid #9C27B0; }
+
 input:focus,
 input:hover,
 button:focus {
   outline: none; }
+
+button:hover {
+  box-shadow: 0px 5px 14px rgba(156, 39, 176, 0.42), 0px 3px 10px rgba(0, 0, 0, 0.12); }
 
 button {
   width: 148px;
@@ -479,6 +486,15 @@ footer {
     height: 500px;
     margin: 0 auto 82px; }
 
+  .form-description {
+    width: 709px; }
+
+  .underline {
+    width: 716px; }
+
+  .message {
+    width: 716px; }
+
   footer {
     display: inline-block;
     width: 459px;
@@ -567,6 +583,16 @@ footer {
     width: 378px;
     height: 548px;
     margin: 0 auto 79px; }
+
+  .form-description {
+    width: 378px;
+    height: 123px; }
+
+  .underline {
+    width: 378px; }
+
+  .message {
+    width: 378px; }
 
   footer {
     width: 321px;
