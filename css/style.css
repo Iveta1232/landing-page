@@ -353,7 +353,7 @@ form {
   font-size: 14px;
   line-height: 16px;
   color: #999999;
-  padding: 0 0 62px 0; }
+  padding: 12px 0 62px 0; }
 
 .message:focus,
 .underline:focus {
