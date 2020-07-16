@@ -290,6 +290,7 @@ form {
   font-size: 14px;
   line-height: 16px;
   color: #999;
+  margin-top: 12px;
 }
 .text {
   padding: 0 0 7px 0;
@@ -311,12 +312,14 @@ form {
   text-align: left;
   color: #9C27B0;
   margin: 0;
+  margin-top: -75px;
 }
-.input-form:hover,
-.input-form:focus {
-  p {
+.input-hover-textarea {
+  margin-top: -99px;
+}
+.input-form input:focus + .input-hover-text,
+.input-form-textarea textarea:focus + .input-hover-text {
     visibility: visible;
-  }
 }
 textarea {
   resize: none;
@@ -325,6 +328,7 @@ textarea {
 .input-form-textarea {
   height: 92px;
   margin-bottom: 25px;
+  margin-top: 70px;
 }
 input:focus,
 textarea:focus {
@@ -436,6 +440,9 @@ footer {
   #form {
     @include size(716px, 500px);
     margin: 0 auto 82px;
+  }
+  .input-form:first-child {
+    margin-bottom: 63px;
   }
   .form-description {
     width: 709px;
