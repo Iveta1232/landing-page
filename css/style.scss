@@ -26,6 +26,7 @@ $default_font_family:Roboto;
 body {
   @include size(1440px, 2792px);
   background: #CCCCCC;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -382,7 +383,7 @@ footer {
   color: #000;
   margin: 0;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     @include size(768px, 4135px);
   }
@@ -466,7 +467,7 @@ footer {
     text-align: right;
   }
 }
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   body {
     @include size(425px, 4442px);
   }

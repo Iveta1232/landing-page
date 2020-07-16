@@ -1,7 +1,8 @@
 body {
   width: 1440px;
   height: 2792px;
-  background: #CCCCCC; }
+  background: #CCCCCC;
+  margin: 0; }
 
 a {
   text-decoration: none; }
@@ -424,7 +425,7 @@ footer {
   color: #000;
   margin: 0; }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     width: 768px;
     height: 4135px; }
@@ -517,7 +518,7 @@ footer {
 
   .made-by {
     text-align: right; } }
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   body {
     width: 425px;
     height: 4442px; }
