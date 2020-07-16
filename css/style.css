@@ -313,51 +313,55 @@ form {
   border-bottom: 1px solid #d2d2d2;
   margin-bottom: 38px; }
 
-.text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #999;
-  padding: 12px 0 7px 0; }
-
-.message {
-  width: 751px;
-  border: none;
-  border-bottom: 1px solid #d2d2d2;
-  margin-bottom: 25px; }
-
+.text,
 .message-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #999;
-  padding: 12px 0 62px 0; }
+  color: #999; }
+
+.text {
+  padding: 0 0 7px 0; }
+
+.message {
+  width: 751px;
+  border: none;
+  border-bottom: 1px solid #d2d2d2; }
+
+.message-text {
+  padding: 0 0 48px 0; }
 
 .input-hover-text {
-  width: 50px;
+  visibility: hidden;
+  width: 70px;
   height: 12px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 12px;
-  color: #9C27B0; }
+  text-align: left;
+  color: #9C27B0;
+  margin: 0; }
 
-.message:focus,
-.underline:focus {
-  border-bottom: 1px solid #9c27b0; }
+.input-form:hover p,
+.input-form:focus p {
+  visibility: visible; }
+
+textarea {
+  resize: none;
+  background: transparent; }
+
+.input-form-textarea {
+  height: 92px;
+  margin-bottom: 25px; }
 
 input:focus,
-input:hover,
-button:focus {
-  outline: none; }
-
-button:hover {
-  box-shadow: 0px 5px 14px rgba(156, 39, 176, 0.42), 0px 3px 10px rgba(0, 0, 0, 0.12); }
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #9c27b0; }
 
 button {
   width: 148px;
@@ -376,6 +380,12 @@ button {
   font-size: 12px;
   line-height: 14px;
   color: #fff; }
+
+button:hover {
+  box-shadow: 0px 5px 14px rgba(156, 39, 176, 0.42), 0px 3px 10px rgba(0, 0, 0, 0.12); }
+
+button:focus {
+  outline: none; }
 
 footer {
   display: flex;
@@ -567,10 +577,10 @@ footer {
     height: 123px; }
 
   .underline {
-    width: 100%; }
+    width: 378px; }
 
   .message {
-    width: 100%; }
+    width: 378px; }
 
   footer {
     width: 321px;

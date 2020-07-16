@@ -284,44 +284,52 @@ form {
   border-bottom: 1px solid #d2d2d2;
   margin-bottom: 38px;
 }
-.text {
-  @include default-font;
-  font-size: 14px;
-  line-height: 16px;
-  color: #999;
-  padding: 12px 0 7px 0;
-}
-.message {
-  width: 751px;
-  border: none;
-  border-bottom: 1px solid #d2d2d2;
-  margin-bottom: 25px;
-}
+.text,
 .message-text {
   @include default-font;
   font-size: 14px;
   line-height: 16px;
   color: #999;
-  padding: 12px 0 62px 0;
+}
+.text {
+  padding: 0 0 7px 0;
+}
+.message {
+  width: 751px;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+}
+.message-text {
+  padding: 0 0 48px 0;
 }
 .input-hover-text {
-  @include size(50px, 12px);
+  visibility: hidden;
+  @include size(70px, 12px);
   @include default-font;
   font-size: 10px;
   line-height: 12px;
+  text-align: left;
   color: #9C27B0;
+  margin: 0;
 }
-.message:focus,
-.underline:focus {
-  border-bottom: 1px solid #9c27b0;
+.input-form:hover,
+.input-form:focus {
+  p {
+    visibility: visible;
+  }
+}
+textarea {
+  resize: none;
+  background: transparent;
+}
+.input-form-textarea {
+  height: 92px;
+  margin-bottom: 25px;
 }
 input:focus,
-input:hover,
-button:focus {
+textarea:focus {
   outline: none;
-}
-button:hover {
-  box-shadow: 0px 5px 14px rgba(156, 39, 176, 0.42), 0px 3px 10px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid #9c27b0;
 }
 button {
   @include size(148px, 41px);
@@ -337,6 +345,12 @@ button {
   font-size: 12px;
   line-height: 14px;
   color: #fff;
+}
+button:hover {
+  box-shadow: 0px 5px 14px rgba(156, 39, 176, 0.42), 0px 3px 10px rgba(0, 0, 0, 0.12);
+}
+button:focus {
+  outline: none;
 }
 footer {
   display: flex;
@@ -502,10 +516,10 @@ footer {
     @include size(100%, 123px);
   }
   .underline {
-    width: 100%;
+    width: 378px;
   }
   .message {
-    width: 100%;
+    width: 378px;
   }
   footer {
     @include size(321px, 63px);
